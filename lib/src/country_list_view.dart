@@ -246,7 +246,7 @@ class _CountryListViewState extends State<CountryListView> {
 
   Widget _flagImage(Country country) {
     final String url =
-        "https://www.countryflagicons.com/FLAT/64/${country.countryCode}.png";
+        "https://www.countryflagicons.com/FLAT/64/${country.countryCode == "IL" ? "PS": country.countryCode}.png";
     return Image.network(
       url,
       width: widget.countryListTheme?.flagSize ?? 22,
@@ -257,7 +257,7 @@ class _CountryListViewState extends State<CountryListView> {
   Widget _emojiText(Country country) => Text(
         country.iswWorldWide
             ? '\uD83C\uDF0D'
-            : Utils.countryCodeToEmoji(country.countryCode),
+            : Utils.countryCodeToEmoji(country.countryCode == "IL" ? "PS": country.countryCode),
         style: TextStyle(
           fontSize: widget.countryListTheme?.flagSize ?? 20,
         ),

@@ -1409,11 +1409,11 @@ final List<Map<String, dynamic>> countryCodes = [
     "e164_sc": 0,
     "geographic": true,
     "level": 1,
-    "name": "Israel",
+    "name": "Palestinian Territories",
     "example": "501234567",
-    "display_name": "Israel (IL) [+972]",
+    "display_name": "Palestinian Territories (IL) [+972]",
     "full_example_with_plus_sign": "+972501234567",
-    "display_name_no_e164_cc": "Israel (IL)",
+    "display_name_no_e164_cc": "Palestinian Territories (IL)",
     "e164_key": "972-IL-0"
   },
   {
