@@ -156,5 +156,5 @@ class Country {
   /// Can be displayed using
   ///
   ///```Text(country.flagEmoji)```
-  String get flagEmoji => Utils.countryCodeToEmoji(countryCode);
+  String get flagEmoji => Utils.countryCodeToEmoji(countryCode == "972" ? "970":countryCode);
 }
